@@ -1,0 +1,57 @@
+# eBPF and Kernel Module .gitignore
+
+# Object files
+*.o
+*.ko
+*.obj
+
+# Kernel module signing
+*.mod.c
+*.mod
+
+# Build artifacts
+*.ko.cmd
+*.o.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+
+# LLVM/Clang compiled objects
+*.bc
+
+# Dependencies
+*.d
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build directories
+build/
+dist/
+.build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Compiled binaries
+*.bin
+*.elf
+.out
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.cmd
+*.map

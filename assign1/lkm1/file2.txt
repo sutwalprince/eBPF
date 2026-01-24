@@ -1,0 +1,1537 @@
+[    0.000000] Linux version 6.17.0-8-generic (buildd@lcy02-amd64-076) (x86_64-linux-gnu-gcc (Ubuntu 15.2.0-4ubuntu4) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.45) #8-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov 14 21:44:46 UTC 2025 (Ubuntu 6.17.0-8.8-generic 6.17.2)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.17.0-8-generic root=UUID=8550a346-eca4-4fee-9220-75ad1ca7bd0d ro quiet splash crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000009545dfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000009545e000-0x000000009ac6dfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000009ac6e000-0x000000009bacdfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000009bace000-0x000000009bb4dfff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000009bb4e000-0x000000009bb4efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000009bb4f000-0x000000009f7fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed84000-0x00000000fed84fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff380000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000025e7fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] efi: EFI v2.7 by INSYDE Corp.
+[    0.000000] efi: ACPI=0x9bb4d000 ACPI 2.0=0x9bb4d014 TPMFinalLog=0x9bac5000 ESRT=0x99e81d18 SMBIOS=0x9966f000 SMBIOS 3.0=0x9966c000 MEMATTR=0x839c5018 MOKvar=0x9962f000 INITRD=0x839cc298 RNG=0x9badc018 TPMEventLog=0x9bad1018 
+[    0.000000] random: crng init done
+[    0.000000] efi: Remove mem53: MMIO range=[0xe0000000-0xefffffff] (256MB) from e820 map
+[    0.000000] e820: remove [mem 0xe0000000-0xefffffff] reserved
+[    0.000000] efi: Not removing mem54: MMIO range=[0xfe000000-0xfe010fff] (68KB) from e820 map
+[    0.000000] efi: Not removing mem55: MMIO range=[0xfed10000-0xfed19fff] (40KB) from e820 map
+[    0.000000] efi: Not removing mem56: MMIO range=[0xfed84000-0xfed84fff] (4KB) from e820 map
+[    0.000000] efi: Not removing mem57: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+[    0.000000] efi: Remove mem58: MMIO range=[0xff380000-0xffffffff] (12MB) from e820 map
+[    0.000000] e820: remove [mem 0xff380000-0xffffffff] reserved
+[    0.000000] SMBIOS 3.2.0 present.
+[    0.000000] DMI: HP HP Laptop 15s-du1xxx/85F1, BIOS F.69 04/16/2025
+[    0.000000] DMI: Memory slots populated: 1/2
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] tsc: Detected 2100.000 MHz processor
+[    0.000000] tsc: Detected 2099.944 MHz TSC
+[    0.000009] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000011] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000016] last_pfn = 0x25e800 max_arch_pfn = 0x400000000
+[    0.000020] MTRR map: 5 entries (3 fixed + 2 variable; max 23), built from 10 variable MTRRs
+[    0.000022] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000384] last_pfn = 0x9bb4f max_arch_pfn = 0x400000000
+[    0.006371] esrt: Reserving ESRT space from 0x0000000099e81d18 to 0x0000000099e81d50.
+[    0.006379] Using GB pages for direct mapping
+[    0.006613] secureboot: Secure boot disabled
+[    0.006613] RAMDISK: [mem 0x7f074000-0x81471fff]
+[    0.006617] ACPI: Early table checksum verification disabled
+[    0.006620] ACPI: RSDP 0x000000009BB4D014 000024 (v02 HPQOEM)
+[    0.006623] ACPI: XSDT 0x000000009BB2B188 000134 (v01 HPQOEM SLIC-MPC 00000002 HP   01000013)
+[    0.006627] ACPI: FACP 0x000000009BB2A000 00010C (v05 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.006631] ACPI: DSDT 0x000000009BAE4000 041029 (v02 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006634] ACPI: FACS 0x000000009BA66000 000040
+[    0.006635] ACPI: UEFI 0x000000009BACD000 000236 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.006638] ACPI: SSDT 0x000000009BB48000 003FB2 (v02 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006640] ACPI: SSDT 0x000000009BB46000 001B4A (v02 HPQOEM 85F1     00003000 HP   00040000)
+[    0.006642] ACPI: SSDT 0x000000009BB45000 0000E6 (v02 HPQOEM 85F1     00003000 HP   00040000)
+[    0.006644] ACPI: SSDT 0x000000009BB41000 0031C6 (v02 HPQOEM 85F1     00003000 HP   00040000)
+[    0.006647] ACPI: SSDT 0x000000009BB40000 00045A (v02 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006649] ACPI: SSDT 0x000000009BB3F000 000046 (v02 HPQOEM 85F1     00003000 HP   00040000)
+[    0.006651] ACPI: TPM2 0x000000009BB3E000 000034 (v03 HPQOEM 0000     00000002 HP   00040000)
+[    0.006653] ACPI: SSDT 0x000000009BB3D000 000169 (v01 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006655] ACPI: SSDT 0x000000009BB36000 006950 (v01 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006658] ACPI: MSDM 0x000000009BB35000 000055 (v03 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.006660] ACPI: LPIT 0x000000009BB34000 000094 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.006662] ACPI: WSMT 0x000000009BB33000 000028 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.006664] ACPI: SSDT 0x000000009BB32000 000B70 (v02 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006666] ACPI: SSDT 0x000000009BB30000 00149F (v02 HPQOEM 85F1     00000000 HP   00040000)
+[    0.006669] ACPI: DBGP 0x000000009BB2F000 000034 (v01 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006671] ACPI: DBG2 0x000000009BB2E000 000054 (v00 HPQOEM 0000     00000002 HP   00040000)
+[    0.006673] ACPI: SSDT 0x000000009BB2D000 000B9F (v02 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006675] ACPI: NHLT 0x000000009BB2C000 00002D (v00 HPQOEM 0000     00000002 HP   00040000)
+[    0.006677] ACPI: ECDT 0x000000009BB4C000 000069 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.006679] ACPI: HPET 0x000000009BB29000 000038 (v01 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006682] ACPI: APIC 0x000000009BB28000 000164 (v03 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006684] ACPI: MCFG 0x000000009BB27000 00003C (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.006686] ACPI: SSDT 0x000000009BB26000 0000F5 (v01 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006688] ACPI: SSDT 0x000000009BAE3000 000F38 (v02 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006690] ACPI: DMAR 0x000000009BAE2000 0000A8 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.006693] ACPI: SSDT 0x000000009BAE1000 000164 (v01 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006695] ACPI: SSDT 0x000000009BAE0000 00005C (v02 HPQOEM 85F1     00001000 HP   00040000)
+[    0.006697] ACPI: SSDT 0x000000009BADF000 00082B (v02 HPQOEM 85F1     00003000 HP   00040000)
+[    0.006699] ACPI: UEFI 0x000000009B264000 00063A (v01 HPQOEM 0000     00000000 HP   00040000)
+[    0.006701] ACPI: UEFI 0x000000009B263000 00005C (v01 HPQOEM 0000     00000000 HP   00040000)
+[    0.006704] ACPI: FPDT 0x000000009BADE000 000044 (v01 HPQOEM 85F1     00000002 HP   00040000)
+[    0.006706] ACPI: BGRT 0x000000009BADD000 000038 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.006708] ACPI: Reserving FACP table memory at [mem 0x9bb2a000-0x9bb2a10b]
+[    0.006709] ACPI: Reserving DSDT table memory at [mem 0x9bae4000-0x9bb25028]
+[    0.006710] ACPI: Reserving FACS table memory at [mem 0x9ba66000-0x9ba6603f]
+[    0.006710] ACPI: Reserving UEFI table memory at [mem 0x9bacd000-0x9bacd235]
+[    0.006711] ACPI: Reserving SSDT table memory at [mem 0x9bb48000-0x9bb4bfb1]
+[    0.006712] ACPI: Reserving SSDT table memory at [mem 0x9bb46000-0x9bb47b49]
+[    0.006712] ACPI: Reserving SSDT table memory at [mem 0x9bb45000-0x9bb450e5]
+[    0.006713] ACPI: Reserving SSDT table memory at [mem 0x9bb41000-0x9bb441c5]
+[    0.006714] ACPI: Reserving SSDT table memory at [mem 0x9bb40000-0x9bb40459]
+[    0.006714] ACPI: Reserving SSDT table memory at [mem 0x9bb3f000-0x9bb3f045]
+[    0.006715] ACPI: Reserving TPM2 table memory at [mem 0x9bb3e000-0x9bb3e033]
+[    0.006715] ACPI: Reserving SSDT table memory at [mem 0x9bb3d000-0x9bb3d168]
+[    0.006716] ACPI: Reserving SSDT table memory at [mem 0x9bb36000-0x9bb3c94f]
+[    0.006717] ACPI: Reserving MSDM table memory at [mem 0x9bb35000-0x9bb35054]
+[    0.006717] ACPI: Reserving LPIT table memory at [mem 0x9bb34000-0x9bb34093]
+[    0.006718] ACPI: Reserving WSMT table memory at [mem 0x9bb33000-0x9bb33027]
+[    0.006719] ACPI: Reserving SSDT table memory at [mem 0x9bb32000-0x9bb32b6f]
+[    0.006719] ACPI: Reserving SSDT table memory at [mem 0x9bb30000-0x9bb3149e]
+[    0.006720] ACPI: Reserving DBGP table memory at [mem 0x9bb2f000-0x9bb2f033]
+[    0.006721] ACPI: Reserving DBG2 table memory at [mem 0x9bb2e000-0x9bb2e053]
+[    0.006721] ACPI: Reserving SSDT table memory at [mem 0x9bb2d000-0x9bb2db9e]
+[    0.006722] ACPI: Reserving NHLT table memory at [mem 0x9bb2c000-0x9bb2c02c]
+[    0.006723] ACPI: Reserving ECDT table memory at [mem 0x9bb4c000-0x9bb4c068]
+[    0.006723] ACPI: Reserving HPET table memory at [mem 0x9bb29000-0x9bb29037]
+[    0.006724] ACPI: Reserving APIC table memory at [mem 0x9bb28000-0x9bb28163]
+[    0.006725] ACPI: Reserving MCFG table memory at [mem 0x9bb27000-0x9bb2703b]
+[    0.006725] ACPI: Reserving SSDT table memory at [mem 0x9bb26000-0x9bb260f4]
+[    0.006726] ACPI: Reserving SSDT table memory at [mem 0x9bae3000-0x9bae3f37]
+[    0.006727] ACPI: Reserving DMAR table memory at [mem 0x9bae2000-0x9bae20a7]
+[    0.006727] ACPI: Reserving SSDT table memory at [mem 0x9bae1000-0x9bae1163]
+[    0.006728] ACPI: Reserving SSDT table memory at [mem 0x9bae0000-0x9bae005b]
+[    0.006728] ACPI: Reserving SSDT table memory at [mem 0x9badf000-0x9badf82a]
+[    0.006729] ACPI: Reserving UEFI table memory at [mem 0x9b264000-0x9b264639]
+[    0.006730] ACPI: Reserving UEFI table memory at [mem 0x9b263000-0x9b26305b]
+[    0.006730] ACPI: Reserving FPDT table memory at [mem 0x9bade000-0x9bade043]
+[    0.006731] ACPI: Reserving BGRT table memory at [mem 0x9badd000-0x9badd037]
+[    0.007059] No NUMA configuration found
+[    0.007059] Faking a node at [mem 0x0000000000000000-0x000000025e7fffff]
+[    0.007071] NODE_DATA(0) allocated [mem 0x25e7d52c0-0x25e7fffff]
+[    0.007254] crashkernel reserved: 0x0000000052000000 - 0x0000000072000000 (512 MB)
+[    0.007272] Zone ranges:
+[    0.007273]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.007275]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.007276]   Normal   [mem 0x0000000100000000-0x000000025e7fffff]
+[    0.007277]   Device   empty
+[    0.007278] Movable zone start for each node
+[    0.007279] Early memory node ranges
+[    0.007280]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.007281]   node   0: [mem 0x0000000000100000-0x000000009545dfff]
+[    0.007282]   node   0: [mem 0x000000009bb4e000-0x000000009bb4efff]
+[    0.007283]   node   0: [mem 0x0000000100000000-0x000000025e7fffff]
+[    0.007284] Initmem setup node 0 [mem 0x0000000000001000-0x000000025e7fffff]
+[    0.007289] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.007314] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.012693] On node 0, zone DMA32: 26352 pages in unavailable ranges
+[    0.025057] On node 0, zone Normal: 17585 pages in unavailable ranges
+[    0.025120] On node 0, zone Normal: 6144 pages in unavailable ranges
+[    0.025137] Reserving Intel graphics memory at [mem 0x9d800000-0x9f7fffff]
+[    0.025415] ACPI: PM-Timer IO Port: 0x1808
+[    0.025423] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.025424] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.025425] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.025426] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.025426] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.025427] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.025427] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.025428] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.025429] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[    0.025429] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[    0.025430] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[    0.025430] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[    0.025431] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[    0.025432] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[    0.025432] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[    0.025433] ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[    0.025434] ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])
+[    0.025434] ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])
+[    0.025435] ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])
+[    0.025435] ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])
+[    0.025469] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[    0.025471] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.025473] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.025477] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.025477] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.025483] e820: update [mem 0x83a41000-0x83a54fff] usable ==> reserved
+[    0.025490] TSC deadline timer available
+[    0.025494] CPU topo: Max. logical packages:   1
+[    0.025495] CPU topo: Max. logical dies:       1
+[    0.025495] CPU topo: Max. dies per package:   1
+[    0.025499] CPU topo: Max. threads per core:   2
+[    0.025500] CPU topo: Num. cores per package:     4
+[    0.025500] CPU topo: Num. threads per package:   8
+[    0.025501] CPU topo: Allowing 8 present CPUs plus 0 hotplug CPUs
+[    0.025514] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.025515] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[    0.025517] PM: hibernation: Registered nosave memory: [mem 0x83a41000-0x83a54fff]
+[    0.025518] PM: hibernation: Registered nosave memory: [mem 0x9545e000-0x9bb4dfff]
+[    0.025520] PM: hibernation: Registered nosave memory: [mem 0x9bb4f000-0xffffffff]
+[    0.025521] [mem 0x9f800000-0xfdffffff] available for PCI devices
+[    0.025522] Booting paravirtualized kernel on bare hardware
+[    0.025524] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.025530] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.026261] percpu: Embedded 84 pages/cpu s221184 r8192 d114688 u524288
+[    0.026267] pcpu-alloc: s221184 r8192 d114688 u524288 alloc=1*2097152
+[    0.026269] pcpu-alloc: [0] 0 1 2 3 [0] 4 5 6 7 
+[    0.026287] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.17.0-8-generic root=UUID=8550a346-eca4-4fee-9220-75ad1ca7bd0d ro quiet splash crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M vt.handoff=7
+[    0.026368] Unknown kernel command line parameters "splash BOOT_IMAGE=/boot/vmlinuz-6.17.0-8-generic", will be passed to user space.
+[    0.026388] printk: log buffer data + meta data: 262144 + 917504 = 1179648 bytes
+[    0.027490] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.028043] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.028130] software IO TLB: area num 8.
+[    0.046109] Fallback order for Node 0: 0 
+[    0.046113] Built 1 zonelists, mobility grouping on.  Total pages: 2046973
+[    0.046114] Policy zone: Normal
+[    0.046120] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.069314] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.078402] ftrace: allocating 61461 entries in 242 pages
+[    0.078403] ftrace: allocated 242 pages with 5 groups
+[    0.079157] Dynamic Preempt: voluntary
+[    0.079217] rcu: Preemptible hierarchical RCU implementation.
+[    0.079218] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[    0.079219] 	Trampoline variant of Tasks RCU enabled.
+[    0.079220] 	Rude variant of Tasks RCU enabled.
+[    0.079220] 	Tracing variant of Tasks RCU enabled.
+[    0.079221] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.079221] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.079229] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.079231] RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.079232] RCU Tasks Trace: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.083878] NR_IRQS: 524544, nr_irqs: 2048, preallocated irqs: 16
+[    0.084151] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.084441] Console: colour dummy device 80x25
+[    0.084443] printk: legacy console [tty0] enabled
+[    0.084490] ACPI: Core revision 20250404
+[    0.084730] hpet: HPET dysfunctional in PC10. Force disabled.
+[    0.084769] APIC: Switch to symmetric I/O mode setup
+[    0.084770] DMAR: Host address width 39
+[    0.084771] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.084782] DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[    0.084784] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.084787] DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.084789] DMAR: RMRR base: 0x0000009aa9f000 end: 0x0000009aabefff
+[    0.084791] DMAR: RMRR base: 0x0000009d000000 end: 0x0000009f7fffff
+[    0.084792] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.084794] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.084795] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.086862] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.086863] x2apic enabled
+[    0.086921] APIC: Switched APIC routing to: cluster x2apic
+[    0.091923] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1e44fb6c2ab, max_idle_ns: 440795206594 ns
+[    0.091928] Calibrating delay loop (skipped), value calculated using timer frequency.. 4199.88 BogoMIPS (lpj=2099944)
+[    0.091948] x86/cpu: SGX disabled or unsupported by BIOS.
+[    0.091953] CPU0: Thermal monitoring enabled (TM1)
+[    0.091994] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.091995] Last level dTLB entries: 4KB 64, 2MB 32, 4MB 32, 1GB 4
+[    0.091999] process: using mwait in idle threads
+[    0.092000] mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[    0.092006] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    0.092007] SRBDS: Mitigation: Microcode
+[    0.092009] Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+[    0.092010] RETBleed: Mitigation: Enhanced IBRS
+[    0.092011] ITS: Mitigation: Aligned branch/return thunks
+[    0.092011] MMIO Stale Data: Mitigation: Clear CPU buffers
+[    0.092012] VMSCAPE: Mitigation: IBPB before exit to userspace
+[    0.092013] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.092014] Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+[    0.092015] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.092024] GDS: Vulnerable
+[    0.092024] active return thunk: its_return_thunk
+[    0.092027] Spectre V2 : Spectre BHI mitigation: SW BHB clearing on syscall and VM exit
+[    0.092042] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.092043] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.092044] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.092045] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.092045] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.092047] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.092048] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.092049] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.092050] x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.092926] Freeing SMP alternatives memory: 52K
+[    0.092926] pid_max: default: 32768 minimum: 301
+[    0.092926] LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,ima,evm
+[    0.092926] landlock: Up and running.
+[    0.092926] Yama: becoming mindful.
+[    0.092926] AppArmor: AppArmor initialized
+[    0.092926] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.092926] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.092926] smpboot: CPU0: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz (family: 0x6, model: 0x8e, stepping: 0xc)
+[    0.092926] Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.092926] ... version:                4
+[    0.092926] ... bit width:              48
+[    0.092926] ... generic registers:      4
+[    0.092926] ... value mask:             0000ffffffffffff
+[    0.092926] ... max period:             00007fffffffffff
+[    0.092926] ... fixed-purpose events:   3
+[    0.092926] ... event mask:             000000070000000f
+[    0.092926] signal: max sigframe size: 2032
+[    0.092926] Estimated ratio of average max frequency by base frequency (times 1024): 1901
+[    0.092926] rcu: Hierarchical SRCU implementation.
+[    0.092926] rcu: 	Max phase no-delay instances is 400.
+[    0.092926] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.093666] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.093721] smp: Bringing up secondary CPUs ...
+[    0.093806] smpboot: x86: Booting SMP configuration:
+[    0.093807] .... node  #0, CPUs:      #1 #2 #3 #4 #5 #6 #7
+[    0.097104] MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+[    0.097104] smp: Brought up 1 node, 8 CPUs
+[    0.097104] smpboot: Total of 8 processors activated (33599.10 BogoMIPS)
+[    0.097996] Memory: 7335968K/8187892K available (22760K kernel code, 4660K rwdata, 16316K rodata, 5140K init, 4328K bss, 829820K reserved, 0K cma-reserved)
+[    0.098194] devtmpfs: initialized
+[    0.098194] x86/mm: Memory block size: 128MB
+[    0.099114] ACPI: PM: Registering ACPI NVS region [mem 0x9ac6e000-0x9bacdfff] (15073280 bytes)
+[    0.099114] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.099114] posixtimers hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.099114] futex hash table entries: 2048 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+[    0.099114] pinctrl core: initialized pinctrl subsystem
+[    0.099284] PM: RTC time: 03:59:28, date: 2026-01-16
+[    0.100066] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.100239] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[    0.100289] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.100342] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.100357] audit: initializing netlink subsys (disabled)
+[    0.100367] audit: type=2000 audit(1768535968.008:1): state=initialized audit_enabled=0 res=1
+[    0.100367] thermal_sys: Registered thermal governor 'fair_share'
+[    0.100367] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.100367] thermal_sys: Registered thermal governor 'step_wise'
+[    0.100367] thermal_sys: Registered thermal governor 'user_space'
+[    0.100367] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.100367] cpuidle: using governor ladder
+[    0.100367] cpuidle: using governor menu
+[    0.100367] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.100367] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.100367] PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+[    0.100367] PCI: Using configuration type 1 for base access
+[    0.100367] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.101015] HugeTLB: allocation took 0ms with hugepage_allocation_threads=2
+[    0.101021] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.101023] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.101025] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.101027] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.101364] ACPI: Added _OSI(Module Device)
+[    0.101364] ACPI: Added _OSI(Processor Device)
+[    0.101364] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.147545] ACPI: 17 ACPI AML tables successfully acquired and loaded
+[    0.148835] ACPI: EC: EC started
+[    0.148836] ACPI: EC: interrupt blocked
+[    0.149481] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.149482] ACPI: EC: Boot ECDT EC used to handle transactions
+[    0.153342] ACPI: Dynamic OEM Table Load:
+[    0.153351] ACPI: SSDT 0xFFFF8F4941FFFC00 000400 (v02 PmRef  Cpu0Cst  00003001 INTL 20160422)
+[    0.154775] ACPI: Dynamic OEM Table Load:
+[    0.154782] ACPI: SSDT 0xFFFF8F4942114800 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20160422)
+[    0.155824] ACPI: Dynamic OEM Table Load:
+[    0.155830] ACPI: SSDT 0xFFFF8F4940300300 0000F4 (v02 PmRef  Cpu0Psd  00003000 INTL 20160422)
+[    0.156789] ACPI: Dynamic OEM Table Load:
+[    0.156795] ACPI: SSDT 0xFFFF8F49403A0400 00011B (v02 PmRef  Cpu0Hwp  00003000 INTL 20160422)
+[    0.157765] ACPI: Dynamic OEM Table Load:
+[    0.157773] ACPI: SSDT 0xFFFF8F4942106000 000BE2 (v02 PmRef  HwpLvt   00003000 INTL 20160422)
+[    0.158911] ACPI: Dynamic OEM Table Load:
+[    0.158918] ACPI: SSDT 0xFFFF8F4942112800 000778 (v02 PmRef  ApIst    00003000 INTL 20160422)
+[    0.160045] ACPI: Dynamic OEM Table Load:
+[    0.160051] ACPI: SSDT 0xFFFF8F4941FFF400 0003D7 (v02 PmRef  ApHwp    00003000 INTL 20160422)
+[    0.161156] ACPI: Dynamic OEM Table Load:
+[    0.161164] ACPI: SSDT 0xFFFF8F4942103000 000D74 (v02 PmRef  ApPsd    00003000 INTL 20160422)
+[    0.162821] ACPI: Dynamic OEM Table Load:
+[    0.162828] ACPI: SSDT 0xFFFF8F4941FFC800 0003CA (v02 PmRef  ApCst    00003000 INTL 20160422)
+[    0.166244] ACPI: Interpreter enabled
+[    0.166278] ACPI: PM: (supports S0 S3 S4 S5)
+[    0.166279] ACPI: Using IOAPIC for interrupt routing
+[    0.167620] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.167622] PCI: Ignoring E820 reservations for host bridge windows
+[    0.168543] ACPI: Enabled 7 GPEs in block 00 to 7F
+[    0.173906] ACPI: \_SB_.PCI0.XDCI.USBC: New power resource
+[    0.181961] ACPI: \_SB_.PCI0.SAT0.VOL0.V0PR: New power resource
+[    0.182119] ACPI: \_SB_.PCI0.SAT0.VOL1.V1PR: New power resource
+[    0.182270] ACPI: \_SB_.PCI0.SAT0.VOL2.V2PR: New power resource
+[    0.186936] ACPI: \_SB_.PCI0.CNVW.WRST: New power resource
+[    0.187245] acpi ABCD0000:00: ACPI dock station (docks/bays count: 1)
+[    0.191352] ACPI: \_TZ_.FN00: New power resource
+[    0.191419] ACPI: \_TZ_.FN01: New power resource
+[    0.191484] ACPI: \_TZ_.FN02: New power resource
+[    0.191550] ACPI: \_TZ_.FN03: New power resource
+[    0.191613] ACPI: \_TZ_.FN04: New power resource
+[    0.192096] ACPI: \PIN_: New power resource
+[    0.192467] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+[    0.192472] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    0.192563] acpi PNP0A08:00: _OSC: platform does not support [PCIeHotplug SHPCHotplug PME]
+[    0.192717] acpi PNP0A08:00: _OSC: OS now controls [AER PCIeCapability LTR DPC]
+[    0.192718] acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+[    0.195009] PCI host bridge to bus 0000:00
+[    0.195012] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.195015] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.195016] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.195017] pci_bus 0000:00: root bus resource [mem 0x9f800000-0xdfffffff window]
+[    0.195018] pci_bus 0000:00: root bus resource [mem 0xfc800000-0xfe7fffff window]
+[    0.195020] pci_bus 0000:00: root bus resource [bus 00-fe]
+[    0.195088] pci 0000:00:00.0: [8086:9b61] type 00 class 0x060000 conventional PCI endpoint
+[    0.195161] pci 0000:00:02.0: [8086:9b41] type 00 class 0x030000 PCIe Root Complex Integrated Endpoint
+[    0.195174] pci 0000:00:02.0: BAR 0 [mem 0xb0000000-0xb0ffffff 64bit]
+[    0.195176] pci 0000:00:02.0: BAR 2 [mem 0xa0000000-0xafffffff 64bit pref]
+[    0.195177] pci 0000:00:02.0: BAR 4 [io  0x5000-0x503f]
+[    0.195187] pci 0000:00:02.0: DMAR: Disabling IOMMU for graphics on this chipset
+[    0.195189] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.195350] pci 0000:00:04.0: [8086:1903] type 00 class 0x118000 conventional PCI endpoint
+[    0.195366] pci 0000:00:04.0: BAR 0 [mem 0xb1510000-0xb1517fff 64bit]
+[    0.195610] pci 0000:00:08.0: [8086:1911] type 00 class 0x088000 conventional PCI endpoint
+[    0.195625] pci 0000:00:08.0: BAR 0 [mem 0xb1520000-0xb1520fff 64bit]
+[    0.195731] pci 0000:00:12.0: [8086:02f9] type 00 class 0x118000 conventional PCI endpoint
+[    0.195771] pci 0000:00:12.0: BAR 0 [mem 0xb1521000-0xb1521fff 64bit]
+[    0.195882] pci 0000:00:14.0: [8086:02ed] type 00 class 0x0c0330 conventional PCI endpoint
+[    0.195913] pci 0000:00:14.0: BAR 0 [mem 0xb1500000-0xb150ffff 64bit]
+[    0.195948] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.196307] pci 0000:00:14.2: [8086:02ef] type 00 class 0x050000 conventional PCI endpoint
+[    0.196346] pci 0000:00:14.2: BAR 0 [mem 0xb151c000-0xb151dfff 64bit]
+[    0.196349] pci 0000:00:14.2: BAR 2 [mem 0xb1522000-0xb1522fff 64bit]
+[    0.196519] pci 0000:00:15.0: [8086:02e8] type 00 class 0x0c8000 conventional PCI endpoint
+[    0.196604] pci 0000:00:15.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+[    0.206203] pci 0000:00:16.0: [8086:02e0] type 00 class 0x078000 conventional PCI endpoint
+[    0.206248] pci 0000:00:16.0: BAR 0 [mem 0xb1524000-0xb1524fff 64bit]
+[    0.206297] pci 0000:00:16.0: PME# supported from D3hot
+[    0.206762] pci 0000:00:17.0: [8086:282a] type 00 class 0x010400 conventional PCI endpoint
+[    0.206796] pci 0000:00:17.0: BAR 0 [mem 0xb151e000-0xb151ffff]
+[    0.206799] pci 0000:00:17.0: BAR 1 [mem 0xb1528000-0xb15280ff]
+[    0.206802] pci 0000:00:17.0: BAR 2 [io  0x5080-0x5087]
+[    0.206806] pci 0000:00:17.0: BAR 3 [io  0x5088-0x508b]
+[    0.206809] pci 0000:00:17.0: BAR 4 [io  0x5060-0x507f]
+[    0.206812] pci 0000:00:17.0: BAR 5 [mem 0xb1527000-0xb15277ff]
+[    0.206846] pci 0000:00:17.0: PME# supported from D3hot
+[    0.207219] pci 0000:00:1d.0: [8086:02b0] type 01 class 0x060400 PCIe Root Port
+[    0.207236] pci 0000:00:1d.0: PCI bridge to [bus 01]
+[    0.207239] pci 0000:00:1d.0:   bridge window [io  0x4000-0x4fff]
+[    0.207242] pci 0000:00:1d.0:   bridge window [mem 0xb1400000-0xb14fffff]
+[    0.207297] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.207323] pci 0000:00:1d.0: PTM enabled (root), 4ns granularity
+[    0.207934] pci 0000:00:1d.1: [8086:02b1] type 01 class 0x060400 PCIe Root Port
+[    0.207950] pci 0000:00:1d.1: PCI bridge to [bus 02]
+[    0.207954] pci 0000:00:1d.1:   bridge window [io  0x3000-0x3fff]
+[    0.207956] pci 0000:00:1d.1:   bridge window [mem 0xb1300000-0xb13fffff]
+[    0.208012] pci 0000:00:1d.1: PME# supported from D0 D3hot D3cold
+[    0.208037] pci 0000:00:1d.1: PTM enabled (root), 4ns granularity
+[    0.208650] pci 0000:00:1d.4: [8086:02b4] type 01 class 0x060400 PCIe Root Port
+[    0.208670] pci 0000:00:1d.4: PCI bridge to [bus 03]
+[    0.208675] pci 0000:00:1d.4:   bridge window [mem 0xb1200000-0xb12fffff]
+[    0.208739] pci 0000:00:1d.4: PME# supported from D0 D3hot D3cold
+[    0.208769] pci 0000:00:1d.4: PTM enabled (root), 4ns granularity
+[    0.209392] pci 0000:00:1d.6: [8086:02b6] type 01 class 0x060400 PCIe Root Port
+[    0.209411] pci 0000:00:1d.6: PCI bridge to [bus 04]
+[    0.209415] pci 0000:00:1d.6:   bridge window [mem 0xb1100000-0xb11fffff]
+[    0.209477] pci 0000:00:1d.6: PME# supported from D0 D3hot D3cold
+[    0.209505] pci 0000:00:1d.6: PTM enabled (root), 4ns granularity
+[    0.210126] pci 0000:00:1f.0: [8086:0284] type 00 class 0x060100 conventional PCI endpoint
+[    0.210513] pci 0000:00:1f.3: [8086:02c8] type 00 class 0x040380 conventional PCI endpoint
+[    0.210583] pci 0000:00:1f.3: BAR 0 [mem 0xb1518000-0xb151bfff 64bit]
+[    0.210594] pci 0000:00:1f.3: BAR 4 [mem 0xb1000000-0xb10fffff 64bit]
+[    0.210663] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.211396] pci 0000:00:1f.4: [8086:02a3] type 00 class 0x0c0500 conventional PCI endpoint
+[    0.211438] pci 0000:00:1f.4: BAR 0 [mem 0xb1525000-0xb15250ff 64bit]
+[    0.211450] pci 0000:00:1f.4: BAR 4 [io  0x5040-0x505f]
+[    0.211689] pci 0000:00:1f.5: [8086:02a4] type 00 class 0x0c8000 conventional PCI endpoint
+[    0.211730] pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]
+[    0.211838] pci 0000:01:00.0: [10ec:8168] type 00 class 0x020000 PCIe Endpoint
+[    0.211886] pci 0000:01:00.0: BAR 0 [io  0x4000-0x40ff]
+[    0.211891] pci 0000:01:00.0: BAR 2 [mem 0xb1404000-0xb1404fff 64bit]
+[    0.211895] pci 0000:01:00.0: BAR 4 [mem 0xb1400000-0xb1403fff 64bit]
+[    0.211992] pci 0000:01:00.0: supports D1 D2
+[    0.211993] pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.212187] pci 0000:00:1d.0: PCI bridge to [bus 01]
+[    0.212267] pci 0000:02:00.0: [10ec:c821] type 00 class 0x028000 PCIe Endpoint
+[    0.212329] pci 0000:02:00.0: BAR 0 [io  0x3000-0x30ff]
+[    0.212340] pci 0000:02:00.0: BAR 2 [mem 0xb1300000-0xb130ffff 64bit]
+[    0.212461] pci 0000:02:00.0: supports D1 D2
+[    0.212462] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.212724] pci 0000:00:1d.1: PCI bridge to [bus 02]
+[    0.212954] pci 0000:03:00.0: [8086:0975] type 00 class 0x010802 PCIe Endpoint
+[    0.213003] pci 0000:03:00.0: BAR 0 [mem 0xb1200000-0xb1203fff 64bit]
+[    0.213368] pci 0000:00:1d.4: PCI bridge to [bus 03]
+[    0.213439] pci 0000:04:00.0: [8086:0975] type 00 class 0x010802 PCIe Endpoint
+[    0.213474] pci 0000:04:00.0: BAR 0 [mem 0xb1100000-0xb1103fff 64bit]
+[    0.213485] pci 0000:04:00.0: enabling Extended Tags
+[    0.213722] pci 0000:00:1d.6: PCI bridge to [bus 04]
+[    0.219144] ACPI: EC: interrupt unblocked
+[    0.219146] ACPI: EC: event unblocked
+[    0.219165] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.219166] ACPI: EC: GPE=0x17
+[    0.219167] ACPI: \_SB_.PCI0.LPCB.EC0_: Boot ECDT EC initialization complete
+[    0.219168] ACPI: \_SB_.PCI0.LPCB.EC0_: EC: Used to handle transactions and events
+[    0.219246] iommu: Default domain type: Translated
+[    0.219246] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.219246] SCSI subsystem initialized
+[    0.219246] libata version 3.00 loaded.
+[    0.219246] ACPI: bus type USB registered
+[    0.219246] usbcore: registered new interface driver usbfs
+[    0.219246] usbcore: registered new interface driver hub
+[    0.219246] usbcore: registered new device driver usb
+[    0.219246] pps_core: LinuxPPS API ver. 1 registered
+[    0.219246] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.219246] PTP clock support registered
+[    0.219246] EDAC MC: Ver: 3.0.0
+[    0.219934] efivars: Registered efivars operations
+[    0.220120] NetLabel: Initializing
+[    0.220122] NetLabel:  domain hash size = 128
+[    0.220123] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.220134] NetLabel:  unlabeled traffic allowed by default
+[    0.220148] mctp: management component transport protocol core
+[    0.220148] NET: Registered PF_MCTP protocol family
+[    0.220148] PCI: Using ACPI for IRQ routing
+[    0.263618] PCI: pci_cache_line_size set to 64 bytes
+[    0.263702] e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+[    0.263704] e820: reserve RAM buffer [mem 0x83a41000-0x83ffffff]
+[    0.263705] e820: reserve RAM buffer [mem 0x9545e000-0x97ffffff]
+[    0.263706] e820: reserve RAM buffer [mem 0x9bb4f000-0x9bffffff]
+[    0.263707] e820: reserve RAM buffer [mem 0x25e800000-0x25fffffff]
+[    0.263738] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.263738] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.263738] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.263738] vgaarb: loaded
+[    0.264024] clocksource: Switched to clocksource tsc-early
+[    0.264413] VFS: Disk quotas dquot_6.6.0
+[    0.264421] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.264464] AppArmor: AppArmor Filesystem Enabled
+[    0.264492] pnp: PnP ACPI init
+[    0.264585] system 00:00: [mem 0x40000000-0x403fffff] could not be reserved
+[    0.264946] system 00:01: [io  0x1800-0x18fe] could not be reserved
+[    0.264951] system 00:01: [mem 0xfd000000-0xfd69ffff] has been reserved
+[    0.264953] system 00:01: [mem 0xfd6b0000-0xfd6cffff] has been reserved
+[    0.264954] system 00:01: [mem 0xfd6f0000-0xfdffffff] has been reserved
+[    0.264956] system 00:01: [mem 0xfe000000-0xfe01ffff] could not be reserved
+[    0.264957] system 00:01: [mem 0xfe200000-0xfe7fffff] has been reserved
+[    0.264958] system 00:01: [mem 0xff000000-0xffffffff] has been reserved
+[    0.264959] system 00:01: [mem 0x00000000-0x003fffff] could not be reserved
+[    0.265201] system 00:02: [io  0x2000-0x20fe] has been reserved
+[    0.265287] system 00:03: [io  0x0680-0x069f] has been reserved
+[    0.265289] system 00:03: [io  0x164e-0x164f] has been reserved
+[    0.265654] system 00:05: [mem 0xfd6e0000-0xfd6effff] has been reserved
+[    0.265656] system 00:05: [mem 0xfd6d0000-0xfd6dffff] has been reserved
+[    0.265657] system 00:05: [mem 0xfd6a0000-0xfd6affff] has been reserved
+[    0.266102] system 00:06: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.266104] system 00:06: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.266105] system 00:06: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.266106] system 00:06: [mem 0xe0000000-0xefffffff] has been reserved
+[    0.266107] system 00:06: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.266108] system 00:06: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.266109] system 00:06: [mem 0xfed45000-0xfed8ffff] could not be reserved
+[    0.266111] system 00:06: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.266432] system 00:07: [mem 0xfe038000-0xfe038fff] has been reserved
+[    0.266661] pnp: PnP ACPI: found 8 devices
+[    0.272486] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.272538] NET: Registered PF_INET protocol family
+[    0.272632] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.285060] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.285097] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.285159] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.285282] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.285444] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.285498] MPTCP token hash table entries: 8192 (order: 5, 196608 bytes, linear)
+[    0.285528] UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.285560] UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.285646] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.285656] NET: Registered PF_XDP protocol family
+[    0.285678] pci 0000:00:15.0: BAR 0 [mem 0x9f800000-0x9f800fff 64bit]: assigned
+[    0.285695] pci 0000:00:1d.0: PCI bridge to [bus 01]
+[    0.285697] pci 0000:00:1d.0:   bridge window [io  0x4000-0x4fff]
+[    0.285700] pci 0000:00:1d.0:   bridge window [mem 0xb1400000-0xb14fffff]
+[    0.285705] pci 0000:00:1d.1: PCI bridge to [bus 02]
+[    0.285707] pci 0000:00:1d.1:   bridge window [io  0x3000-0x3fff]
+[    0.285709] pci 0000:00:1d.1:   bridge window [mem 0xb1300000-0xb13fffff]
+[    0.285714] pci 0000:00:1d.4: PCI bridge to [bus 03]
+[    0.285717] pci 0000:00:1d.4:   bridge window [mem 0xb1200000-0xb12fffff]
+[    0.285721] pci 0000:00:1d.6: PCI bridge to [bus 04]
+[    0.285724] pci 0000:00:1d.6:   bridge window [mem 0xb1100000-0xb11fffff]
+[    0.285729] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.285730] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.285731] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.285732] pci_bus 0000:00: resource 7 [mem 0x9f800000-0xdfffffff window]
+[    0.285733] pci_bus 0000:00: resource 8 [mem 0xfc800000-0xfe7fffff window]
+[    0.285735] pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+[    0.285736] pci_bus 0000:01: resource 1 [mem 0xb1400000-0xb14fffff]
+[    0.285737] pci_bus 0000:02: resource 0 [io  0x3000-0x3fff]
+[    0.285738] pci_bus 0000:02: resource 1 [mem 0xb1300000-0xb13fffff]
+[    0.285739] pci_bus 0000:03: resource 1 [mem 0xb1200000-0xb12fffff]
+[    0.285740] pci_bus 0000:04: resource 1 [mem 0xb1100000-0xb11fffff]
+[    0.287610] PCI: CLS 64 bytes, default 64
+[    0.287657] DMAR: No ATSR found
+[    0.287676] DMAR: No SATC found
+[    0.287678] DMAR: dmar1: Using Queued invalidation
+[    0.287738] Trying to unpack rootfs image as initramfs...
+[    0.287775] pci 0000:00:00.0: Adding to iommu group 0
+[    0.287783] pci 0000:00:04.0: Adding to iommu group 1
+[    0.287790] pci 0000:00:08.0: Adding to iommu group 2
+[    0.287800] pci 0000:00:12.0: Adding to iommu group 3
+[    0.287813] pci 0000:00:14.0: Adding to iommu group 4
+[    0.287819] pci 0000:00:14.2: Adding to iommu group 4
+[    0.287829] pci 0000:00:15.0: Adding to iommu group 5
+[    0.287839] pci 0000:00:16.0: Adding to iommu group 6
+[    0.287848] pci 0000:00:17.0: Adding to iommu group 7
+[    0.287858] pci 0000:00:1d.0: Adding to iommu group 8
+[    0.287866] pci 0000:00:1d.1: Adding to iommu group 9
+[    0.287875] pci 0000:00:1d.4: Adding to iommu group 10
+[    0.287889] pci 0000:00:1d.6: Adding to iommu group 11
+[    0.287907] pci 0000:00:1f.0: Adding to iommu group 12
+[    0.287915] pci 0000:00:1f.3: Adding to iommu group 12
+[    0.287923] pci 0000:00:1f.4: Adding to iommu group 12
+[    0.287931] pci 0000:00:1f.5: Adding to iommu group 12
+[    0.287941] pci 0000:01:00.0: Adding to iommu group 13
+[    0.287950] pci 0000:02:00.0: Adding to iommu group 14
+[    0.287958] pci 0000:03:00.0: Adding to iommu group 15
+[    0.287966] pci 0000:04:00.0: Adding to iommu group 16
+[    0.288889] DMAR: Intel(R) Virtualization Technology for Directed I/O
+[    0.288893] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.288894] software IO TLB: mapped [mem 0x0000000090b40000-0x0000000094b40000] (64MB)
+[    0.291048] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.311766] Initialise system trusted keyrings
+[    0.311777] Key type blacklist registered
+[    0.311850] workingset: timestamp_bits=36 max_order=21 bucket_order=0
+[    0.312069] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.312232] fuse: init (API version 7.44)
+[    0.312428] integrity: Platform Keyring initialized
+[    0.312432] integrity: Machine keyring initialized
+[    0.321506] Key type asymmetric registered
+[    0.321510] Asymmetric key parser 'x509' registered
+[    0.321557] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    0.321661] io scheduler mq-deadline registered
+[    0.322166] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.322492] pcieport 0000:00:1d.0: AER: enabled with IRQ 121
+[    0.322538] pcieport 0000:00:1d.0: DPC: enabled with IRQ 121
+[    0.322540] pcieport 0000:00:1d.0: DPC: error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    0.322873] pcieport 0000:00:1d.1: AER: enabled with IRQ 122
+[    0.322975] pcieport 0000:00:1d.1: DPC: enabled with IRQ 122
+[    0.322977] pcieport 0000:00:1d.1: DPC: error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    0.323275] pcieport 0000:00:1d.4: AER: enabled with IRQ 123
+[    0.323344] pcieport 0000:00:1d.4: DPC: enabled with IRQ 123
+[    0.323346] pcieport 0000:00:1d.4: DPC: error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    0.323608] pcieport 0000:00:1d.6: AER: enabled with IRQ 124
+[    0.323646] pcieport 0000:00:1d.6: DPC: enabled with IRQ 124
+[    0.323648] pcieport 0000:00:1d.6: DPC: error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    0.323973] ACPI: AC: AC Adapter [ACAD] (off-line)
+[    0.324022] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:19/PNP0C0D:00/input/input0
+[    0.324038] ACPI: button: Lid Switch [LID0]
+[    0.324069] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    0.324103] ACPI: button: Power Button [PWRB]
+[    0.324128] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    0.324162] ACPI: button: Power Button [PWRF]
+[    0.326713] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.326717] ACPI: thermal: Thermal Zone [TZ00] (28 C)
+[    0.326833] thermal LNXTHERM:01: registered as thermal_zone1
+[    0.326834] ACPI: thermal: Thermal Zone [TZ01] (30 C)
+[    0.326882] thermal LNXTHERM:02: registered as thermal_zone2
+[    0.326883] ACPI: thermal: Thermal Zone [TZ02] (10 C)
+[    0.327168] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.327599] ACPI: battery: Slot [BAT1] (battery present)
+[    0.328990] hpet_acpi_add: no address or irqs in _CRS
+[    0.329017] Linux agpgart interface v0.103
+[    0.336822] loop: module loaded
+[    0.337046] ACPI: bus type drm_connector registered
+[    0.337255] tun: Universal TUN/TAP device driver, 1.6
+[    0.337286] PPP generic driver version 2.4.2
+[    0.337535] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.337543] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    0.338690] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x110 quirks 0x0000000000009810
+[    0.338929] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.338932] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    0.338934] xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+[    0.338970] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.17
+[    0.338972] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.338973] usb usb1: Product: xHCI Host Controller
+[    0.338974] usb usb1: Manufacturer: Linux 6.17.0-8-generic xhci-hcd
+[    0.338975] usb usb1: SerialNumber: 0000:00:14.0
+[    0.339078] hub 1-0:1.0: USB hub found
+[    0.339097] hub 1-0:1.0: 12 ports detected
+[    0.340358] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.17
+[    0.340360] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.340362] usb usb2: Product: xHCI Host Controller
+[    0.340363] usb usb2: Manufacturer: Linux 6.17.0-8-generic xhci-hcd
+[    0.340364] usb usb2: SerialNumber: 0000:00:14.0
+[    0.340428] hub 2-0:1.0: USB hub found
+[    0.340439] hub 2-0:1.0: 6 ports detected
+[    0.340642] usb: port power management may be unreliable
+[    0.341149] i8042: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+[    0.341152] i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+[    0.341828] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.341899] mousedev: PS/2 mouse device common for all mice
+[    0.342014] rtc_cmos rtc_cmos: RTC can wake from S4
+[    0.343152] rtc_cmos rtc_cmos: registered as rtc0
+[    0.343412] rtc_cmos rtc_cmos: setting system clock to 2026-01-16T03:59:28 UTC (1768535968)
+[    0.343443] rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram
+[    0.343451] i2c_dev: i2c /dev entries driver
+[    0.343651] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.343672] device-mapper: uevent: version 1.0.3
+[    0.343709] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[    0.343713] intel_pstate: Intel P-state driver initializing
+[    0.344053] intel_pstate: HWP enabled
+[    0.344191] simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[    0.344192] [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[    0.345665] fbcon: Deferring console take-over
+[    0.345670] simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[    0.345779] drop_monitor: Initializing network drop monitor service
+[    0.345873] NET: Registered PF_INET6 protocol family
+[    0.346109] Segment Routing with IPv6
+[    0.346115] In-situ OAM (IOAM) with IPv6
+[    0.346132] NET: Registered PF_PACKET protocol family
+[    0.346158] Key type dns_resolver registered
+[    0.347007] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.347342] microcode: Current revision: 0x00000100
+[    0.347343] microcode: Updated early from: 0x000000fe
+[    0.347593] IPI shorthand broadcast: enabled
+[    0.349086] sched_clock: Marking stable (341001425, 7549772)->(393583649, -45032452)
+[    0.349201] registered taskstats version 1
+[    0.349517] Loading compiled-in X.509 certificates
+[    0.350020] Loaded X.509 cert 'Build time autogenerated kernel key: 8d7af9b004fb468421e0da6136c8bc9a04377871'
+[    0.350420] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+[    0.350849] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    0.351008] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+[    0.351303] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    0.351305] blacklist: Loading compiled-in revocation X.509 certificates
+[    0.351319] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    0.351329] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    0.351338] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    0.351347] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    0.351356] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    0.351365] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    0.351374] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    0.351383] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    0.355251] Demotion targets for Node 0: null
+[    0.355344] Key type .fscrypt registered
+[    0.355345] Key type fscrypt-provisioning registered
+[    0.355391] Key type big_key registered
+[    0.355398] Key type trusted registered
+[    0.441438] Freeing initrd memory: 36856K
+[    0.454273] Key type encrypted registered
+[    0.454277] AppArmor: AppArmor sha256 policy hashing enabled
+[    0.455727] integrity: Loading X.509 certificate: UEFI:db
+[    0.455768] integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+[    0.455769] integrity: Loading X.509 certificate: UEFI:db
+[    0.455782] integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+[    0.455783] integrity: Loading X.509 certificate: UEFI:db
+[    0.455797] integrity: Loaded X.509 cert 'HP Inc.: HP UEFI Secure Boot DB 2017: d9c01b50cfcae89d3b05345c163aa76e5dd589e7'
+[    0.461083] Loading compiled-in module X.509 certificates
+[    0.461482] Loaded X.509 cert 'Build time autogenerated kernel key: 8d7af9b004fb468421e0da6136c8bc9a04377871'
+[    0.461484] ima: Allocated hash algorithm: sha256
+[    0.478997] ima: No architecture policies found
+[    0.479010] evm: Initialising EVM extended attributes:
+[    0.479011] evm: security.selinux
+[    0.479012] evm: security.SMACK64
+[    0.479013] evm: security.SMACK64EXEC
+[    0.479013] evm: security.SMACK64TRANSMUTE
+[    0.479014] evm: security.SMACK64MMAP
+[    0.479015] evm: security.apparmor
+[    0.479015] evm: security.ima
+[    0.479016] evm: security.capability
+[    0.479017] evm: HMAC attrs: 0x1
+[    0.479218] PM:   Magic number: 10:927:967
+[    0.479277] memory memory18: hash matches
+[    0.480348] RAS: Correctable Errors collector initialized.
+[    0.484925] clk: Disabling unused clocks
+[    0.484928] PM: genpd: Disabling unused power domains
+[    0.486463] Freeing unused decrypted memory: 2028K
+[    0.487206] Freeing unused kernel image (initmem) memory: 5140K
+[    0.487226] Write protecting the kernel read-only data: 40960k
+[    0.488002] Freeing unused kernel image (text/rodata gap) memory: 1812K
+[    0.488139] Freeing unused kernel image (rodata/data gap) memory: 68K
+[    0.502771] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.502776] Run /init as init process
+[    0.502778]   with arguments:
+[    0.502779]     /init
+[    0.502780]     splash
+[    0.502781]   with environment:
+[    0.502782]     HOME=/
+[    0.502783]     TERM=linux
+[    0.502783]     BOOT_IMAGE=/boot/vmlinuz-6.17.0-8-generic
+[    0.508114] systemd[1]: Inserted module 'autofs4'
+[    0.574637] systemd[1]: Successfully made /usr/ read-only.
+[    0.574750] systemd[1]: systemd 257.9-0ubuntu2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[    0.574755] systemd[1]: Detected architecture x86-64.
+[    0.574756] systemd[1]: Running in initrd.
+[    0.574918] systemd[1]: Hostname set to <prince>.
+[    0.581723] usb 1-5: new high-speed USB device number 2 using xhci_hcd
+[    0.633308] systemd[1]: Queued start job for default target initrd.target.
+[    0.642429] systemd[1]: Expecting device dev-disk-by\x2duuid-8550a346\x2deca4\x2d4fee\x2d9220\x2d75ad1ca7bd0d.device - /dev/disk/by-uuid/8550a346-eca4-4fee-9220-75ad1ca7bd0d...
+[    0.642541] systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.
+[    0.642629] systemd[1]: Reached target slices.target - Slice Units.
+[    0.642659] systemd[1]: Reached target swap.target - Swaps.
+[    0.642684] systemd[1]: Reached target timers.target - Timer Units.
+[    0.642829] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[    0.642966] systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[    0.643086] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    0.643171] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    0.643197] systemd[1]: Reached target sockets.target - Socket Units.
+[    0.643285] systemd[1]: dracut-cmdline-ask.service - dracut ask for additional cmdline parameters was skipped because no trigger condition checks were met.
+[    0.644905] systemd[1]: Starting dracut-cmdline.service - dracut cmdline hook...
+[    0.646172] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    0.648749] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    0.650100] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    0.650175] systemd[1]: systemd-pcrphase-initrd.service - TPM PCR Barrier (initrd) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    0.653935] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    0.655403] systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[    0.666063] lp: driver loaded but no devices found
+[    0.666507] systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+[    0.667746] systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+[    0.668664] systemd-journald[171]: Collecting audit messages is disabled.
+[    0.669266] ppdev: user-space parallel port driver
+[    0.676826] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[    0.677541] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[    0.681321] systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+[    0.681405] systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+[    0.681419] systemd[1]: Reached target local-fs.target - Local File Systems.
+[    0.685798] systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+[    0.697685] systemd[1]: Started systemd-journald.service - Journal Service.
+[    0.724660] usb 1-5: New USB device found, idVendor=04f2, idProduct=b6f1, bcdDevice=27.26
+[    0.724665] usb 1-5: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+[    0.724667] usb 1-5: Product: HP TrueVision HD Camera
+[    0.724668] usb 1-5: Manufacturer: Chicony Electronics Co.,Ltd.
+[    0.724670] usb 1-5: SerialNumber: 0001
+[    0.838601] usb 1-10: new full-speed USB device number 3 using xhci_hcd
+[    0.923526] wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: 8232DE3D-663D-4327-A8F4-E293ADB9BF05 has zero instances
+[    0.923531] wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: 8F1F6436-9F42-42C8-BADC-0E9424F20C9A has zero instances
+[    0.923532] wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: 8F1F6435-9F42-42C8-BADC-0E9424F20C9A has zero instances
+[    0.923533] wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: DF4E63B6-3BBC-4858-9737-C74F82F821F3 has zero instances
+[    0.934284] hid: raw HID events driver (C) Jiri Kosina
+[    0.941505] intel-lpss 0000:00:15.0: enabling device (0004 -> 0006)
+[    0.942412] idma64 idma64.0: Found Intel integrated DMA 64-bit
+[    0.944098] Key type psk registered
+[    0.962317] ahci 0000:00:17.0: AHCI vers 0001.0301, 32 command slots, 6 Gbps, RAID mode
+[    0.962323] ahci 0000:00:17.0: 1/1 ports implemented (port mask 0x1)
+[    0.962325] ahci 0000:00:17.0: flags: 64bit ncq sntf pm clo only pio slum part deso sadm sds apst 
+[    0.963463] usb 1-10: New USB device found, idVendor=0bda, idProduct=b00a, bcdDevice= 1.10
+[    0.963470] usb 1-10: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    0.963472] usb 1-10: Product: Bluetooth Radio 
+[    0.963474] usb 1-10: Manufacturer: Realtek 
+[    0.963475] usb 1-10: SerialNumber: 00e04c000001
+[    0.965096] scsi host0: ahci
+[    0.971414] ata1: SATA max UDMA/133 abar m2048@0xb1527000 port 0xb1527100 irq 133 lpm-pol 3
+[    1.275321] ata1: SATA link down (SStatus 4 SControl 300)
+[    1.285668] nvme nvme1: pci function 0000:03:00.0
+[    1.285668] nvme nvme0: pci function 0000:04:00.0
+[    1.292612] input: ELAN0709:00 04F3:30A0 Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-ELAN0709:00/0018:04F3:30A0.0001/input/input4
+[    1.293044] input: ELAN0709:00 04F3:30A0 Touchpad as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-ELAN0709:00/0018:04F3:30A0.0001/input/input6
+[    1.293418] hid-generic 0018:04F3:30A0.0001: input,hidraw0: I2C HID v1.00 Mouse [ELAN0709:00 04F3:30A0] on i2c-ELAN0709:00
+[    1.302323] nvme nvme1: 8/0/0 default/read/poll queues
+[    1.306815]  nvme1n1: p1 p2
+[    1.331788] nvme nvme0: 8/0/0 default/read/poll queues
+[    1.340572] tsc: Refined TSC clocksource calibration: 2112.001 MHz
+[    1.340582] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1e71797ffd2, max_idle_ns: 440795307724 ns
+[    1.340613] clocksource: Switched to clocksource tsc
+[    1.388933] input: ELAN0709:00 04F3:30A0 Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-ELAN0709:00/0018:04F3:30A0.0001/input/input7
+[    1.389181] input: ELAN0709:00 04F3:30A0 Touchpad as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-ELAN0709:00/0018:04F3:30A0.0001/input/input9
+[    1.389438] hid-multitouch 0018:04F3:30A0.0001: input,hidraw0: I2C HID v1.00 Mouse [ELAN0709:00 04F3:30A0] on i2c-ELAN0709:00
+[    1.692930] EXT4-fs (nvme1n1p2): orphan cleanup on readonly fs
+[    1.693335] EXT4-fs (nvme1n1p2): mounted filesystem 8550a346-eca4-4fee-9220-75ad1ca7bd0d ro with ordered data mode. Quota mode: none.
+[    1.792464] systemd-journald[171]: Received SIGTERM from PID 1 (systemd).
+[    1.865660] systemd[1]: systemd 257.9-0ubuntu2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[    1.865667] systemd[1]: Detected architecture x86-64.
+[    1.933268] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[    2.109807] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[    2.109915] systemd[1]: Stopped initrd-switch-root.service - Switch Root.
+[    2.110610] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    2.111044] systemd[1]: Created slice system-cups.slice - CUPS Slice.
+[    2.111371] systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[    2.111576] systemd[1]: Created slice user.slice - User and Session Slice.
+[    2.111609] systemd[1]: systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch was skipped because of an unmet condition check (ConditionPathExists=!/run/plymouth/pid).
+[    2.111647] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[    2.111805] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[    2.111835] systemd[1]: Expecting device dev-disk-by\x2duuid-66F7\x2d5BBF.device - /dev/disk/by-uuid/66F7-5BBF...
+[    2.111855] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[    2.111888] systemd[1]: Stopped target initrd-switch-root.target - Switch Root.
+[    2.111909] systemd[1]: Stopped target initrd-fs.target - Initrd File Systems.
+[    2.111927] systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.
+[    2.111945] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[    2.111983] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[    2.112004] systemd[1]: Reached target slices.target - Slice Units.
+[    2.112027] systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+[    2.112057] systemd[1]: Reached target time-set.target - System Time Set.
+[    2.112101] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[    2.112209] systemd[1]: Listening on syslog.socket - Syslog Socket.
+[    2.112877] systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[    2.112949] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[    2.113046] systemd[1]: Listening on systemd-oomd.socket - Userspace Out-Of-Memory (OOM) Killer Socket.
+[    2.113092] systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    2.113107] systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    2.113161] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    2.113217] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    2.113910] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[    2.114396] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[    2.115020] systemd[1]: Mounting run-lock.mount - Legacy Locks Directory /run/lock...
+[    2.115717] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[    2.116594] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[    2.126170] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    2.128703] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[    2.130473] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    2.131990] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[    2.133994] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+[    2.135953] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[    2.137741] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+[    2.137863] systemd[1]: plymouth-switch-root.service: Deactivated successfully.
+[    2.137957] systemd[1]: Stopped plymouth-switch-root.service - Plymouth switch root service.
+[    2.138295] systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+[    2.140460] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    2.140534] systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    2.141849] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[    2.141966] systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    2.143349] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[    2.144791] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[    2.145518] pstore: Using crash dump compression: deflate
+[    2.148439] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[    2.148859] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[    2.149254] systemd[1]: Mounted run-lock.mount - Legacy Locks Directory /run/lock.
+[    2.149754] systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[    2.150136] systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[    2.151011] systemd[1]: Finished keyboard-setup.service - Set the console keyboard layout.
+[    2.152130] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    2.154302] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    2.154861] systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+[    2.155837] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    2.156280] systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+[    2.157733] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    2.158526] systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+[    2.159221] systemd-journald[455]: Collecting audit messages is disabled.
+[    2.161274] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[    2.164669] systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[    2.165678] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[    2.167101] systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+[    2.167887] EXT4-fs (nvme1n1p2): re-mounted 8550a346-eca4-4fee-9220-75ad1ca7bd0d r/w.
+[    2.171043] systemd[1]: Started systemd-journald.service - Journal Service.
+[    2.214958] pstore: Registered efi_pstore as persistent store backend
+[    2.215777] systemd-journald[455]: Received client request to flush runtime journal.
+[    2.216353] Adding 4194300k swap on /swap.img.  Priority:-2 extents:5 across:4603904k SS
+[    2.248154] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[    2.248173] pci 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[    2.248177] pci 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[    2.248181] pci 0000:02:00.0:    [ 0] RxErr                  (First)
+[    2.600887] input: Wireless hotkeys as /devices/virtual/input/input10
+[    2.733717] intel_pmc_core INT33A1:00:  initialized
+[    2.798354] mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+[    2.810782] r8169 0000:01:00.0: enabling device (0000 -> 0003)
+[    2.811069] r8169 0000:01:00.0: can't disable ASPM; OS doesn't have ASPM control
+[    2.811450] i801_smbus 0000:00:1f.4: SPD Write Disable is set
+[    2.811472] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[    2.909943] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.910662] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.911132] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    2.965262] r8169 0000:01:00.0 eth0: RTL8168h/8111h, f8:0d:ac:56:94:d0, XID 541, IRQ 153
+[    2.965275] r8169 0000:01:00.0 eth0: jumbo features [frames: 9194 bytes, tx checksumming: ko]
+[    3.018250] Bluetooth: Core ver 2.22
+[    3.018309] NET: Registered PF_BLUETOOTH protocol family
+[    3.018314] Bluetooth: HCI device and connection manager initialized
+[    3.018323] Bluetooth: HCI socket layer initialized
+[    3.018329] Bluetooth: L2CAP socket layer initialized
+[    3.018338] Bluetooth: SCO socket layer initialized
+[    3.018589] RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[    3.018597] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[    3.018601] RAPL PMU: hw unit of domain package 2^-14 Joules
+[    3.018604] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[    3.018607] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[    3.018609] RAPL PMU: hw unit of domain psys 2^-14 Joules
+[    3.027735] mc: Linux media interface: v0.10
+[    3.176871] r8169 0000:01:00.0 eno1: renamed from eth0
+[    3.236565] intel_rapl_common: Found RAPL domain package
+[    3.236573] intel_rapl_common: Found RAPL domain core
+[    3.236576] intel_rapl_common: Found RAPL domain uncore
+[    3.236579] intel_rapl_common: Found RAPL domain dram
+[    3.236582] intel_rapl_common: Found RAPL domain psys
+[    3.237454] videodev: Linux video capture interface: v2.00
+[    3.250073] loop0: detected capacity change from 0 to 8
+[    3.253630] loop1: detected capacity change from 0 to 151392
+[    3.260307] loop2: detected capacity change from 0 to 507008
+[    3.261583] loop3: detected capacity change from 0 to 24064
+[    3.267578] loop4: detected capacity change from 0 to 22800
+[    3.274603] loop5: detected capacity change from 0 to 1057184
+[    3.281173] loop6: detected capacity change from 0 to 187776
+[    3.291505] loop7: detected capacity change from 0 to 35936
+[    3.357757] loop8: detected capacity change from 0 to 29528
+[    3.358184] loop9: detected capacity change from 0 to 1152
+[    3.361762] loop11: detected capacity change from 0 to 463296
+[    3.364602] loop10: detected capacity change from 0 to 103976
+[    3.619130] input: HP WMI hotkeys as /devices/virtual/input/input11
+[    4.108195] i915 0000:00:02.0: [drm] Found cometlake/ult (device ID 9b41) integrated display version 9.00 stepping N/A
+[    4.111203] spi-nor spi0.0: supply vcc not found, using dummy regulator
+[    4.120367] Bluetooth: hci0: RTL: examining hci_ver=08 hci_rev=000c lmp_ver=08 lmp_subver=8821
+[    4.121362] Bluetooth: hci0: RTL: rom_version status=0 version=1
+[    4.121370] Bluetooth: hci0: RTL: loading rtl_bt/rtl8821c_fw.bin
+[    4.121675] usbcore: registered new interface driver btusb
+[    4.123004] Bluetooth: hci0: RTL: loading rtl_bt/rtl8821c_config.bin
+[    4.123307] Bluetooth: hci0: RTL: cfg_sz 10, total sz 34926
+[    4.127096] Creating 1 MTD partitions on "0000:00:1f.5":
+[    4.127112] 0x000000000000-0x000001000000 : "BIOS"
+[    4.140284] intel_rapl_common: Found RAPL domain package
+[    4.140293] intel_rapl_common: Found RAPL domain dram
+[    4.156252] i915 0000:00:02.0: vgaarb: deactivate vga console
+[    4.157539] usb 1-5: Found UVC 1.00 device HP TrueVision HD Camera (04f2:b6f1)
+[    4.158873] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    4.160933] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+[    4.163121] rtw88_8821ce 0000:02:00.0: enabling device (0000 -> 0003)
+[    4.163158] usbcore: registered new interface driver uvcvideo
+[    4.168080] rtw88_8821ce 0000:02:00.0: Firmware version 24.11.0, H2C version 12
+[    4.204414] audit: type=1400 audit(1768535972.359:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=784 comm="apparmor_parser"
+[    4.204544] audit: type=1400 audit(1768535972.359:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=783 comm="apparmor_parser"
+[    4.204960] audit: type=1400 audit(1768535972.360:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=787 comm="apparmor_parser"
+[    4.206167] audit: type=1400 audit(1768535972.361:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=789 comm="apparmor_parser"
+[    4.207179] audit: type=1400 audit(1768535972.362:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=794 comm="apparmor_parser"
+[    4.209715] audit: type=1400 audit(1768535972.365:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="bfdd" pid=796 comm="apparmor_parser"
+[    4.209889] audit: type=1400 audit(1768535972.365:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="babeld" pid=792 comm="apparmor_parser"
+[    4.210446] audit: type=1400 audit(1768535972.365:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="alsamixer" pid=791 comm="apparmor_parser"
+[    4.212789] audit: type=1400 audit(1768535972.368:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="bgpd" pid=797 comm="apparmor_parser"
+[    4.228382] intel_tcc_cooling: Programmable TCC Offset detected
+[    4.274008] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+[    4.275892] rtw88_8821ce 0000:02:00.0 wlo1: renamed from wlan0
+[    4.299401] i915 0000:00:02.0: [drm] Registered 3 planes with drm panic
+[    4.299412] [drm] Initialized i915 1.6.0 for 0000:00:02.0 on minor 1
+[    4.315317] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    4.315974] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input12
+[    4.559829] snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+[    4.622468] Bluetooth: hci0: RTL: fw version 0x75b8f098
+[    4.654185] hp_wmi: query 0x4c returned error 0x6
+[    4.755737] fbcon: i915drmfb (fb0) is primary device
+[    4.755761] fbcon: Deferring console take-over
+[    4.755763] i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+[    5.124737] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops intel_audio_component_bind_ops [i915])
+[    5.201010] snd_hda_codec_alc269 hdaudioC0D0: ALC236: picked fixup  for PCI SSID 103c:0000
+[    5.201726] snd_hda_codec_alc269 hdaudioC0D0: autoconfig for ALC236: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+[    5.201738] snd_hda_codec_alc269 hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    5.201744] snd_hda_codec_alc269 hdaudioC0D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[    5.201750] snd_hda_codec_alc269 hdaudioC0D0:    mono: mono_out=0x0
+[    5.201753] snd_hda_codec_alc269 hdaudioC0D0:    inputs:
+[    5.201757] snd_hda_codec_alc269 hdaudioC0D0:      Internal Mic=0x12
+[    5.201762] snd_hda_codec_alc269 hdaudioC0D0:      Mic=0x19
+[    5.272276] input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input13
+[    5.272429] input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input14
+[    5.272587] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input15
+[    5.272732] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input16
+[    5.272881] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input17
+[    5.554818] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    5.554828] Bluetooth: BNEP filters: protocol multicast
+[    5.554836] Bluetooth: BNEP socket layer initialized
+[    5.557635] kauditd_printk_skb: 230 callbacks suppressed
+[    5.557644] audit: type=1400 audit(1768535973.713:241): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=1258 comm="apparmor_parser"
+[    5.560873] Bluetooth: MGMT ver 1.23
+[    5.573463] NET: Registered PF_ALG protocol family
+[    5.588141] audit: type=1400 audit(1768535973.743:242): apparmor="DENIED" operation="capable" class="cap" profile="systemd-detect-virt" pid=1396 comm="systemd-detect-" capability=38  capname="perfmon"
+[    5.633979] Bluetooth: RFCOMM TTY layer initialized
+[    5.633994] Bluetooth: RFCOMM socket layer initialized
+[    5.634005] Bluetooth: RFCOMM ver 1.11
+[    5.766847] loop12: detected capacity change from 0 to 8
+[    5.767045] nvme nvme0: using unchecked data buffer
+[    5.832516] block nvme1n1: No UUID available providing old NGUID
+[    5.913471] NET: Registered PF_QIPCRTR protocol family
+[    5.995754] Consider using thermal netlink events interface
+[    6.084752] audit: type=1400 audit(1768535974.240:243): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1585 comm="apparmor_parser"
+[    6.098167] audit: type=1400 audit(1768535974.253:244): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1585 comm="apparmor_parser"
+[    6.629610] Generic FE-GE Realtek PHY r8169-0-100:00: attached PHY driver (mii_bus:phy_addr=r8169-0-100:00, irq=MAC)
+[    6.786677] r8169 0000:01:00.0 eno1: Link is Down
+[    7.271023] audit: type=1400 audit(1768535975.426:245): apparmor="DENIED" operation="open" class="file" profile="/usr/sbin/cupsd" name="/etc/paperspecs" pid=1689 comm="cupsd" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[    7.278270] audit: type=1400 audit(1768535975.433:246): apparmor="DENIED" operation="capable" class="cap" profile="/usr/sbin/cupsd" pid=1689 comm="cupsd" capability=12  capname="net_admin"
+[    7.338692] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[    7.338710] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[    7.338714] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[    7.338718] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[    8.653407] audit: type=1400 audit(1768535976.808:247): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=1860 comm="fusermount3" capability=1  capname="dac_override"
+[    8.653416] audit: type=1400 audit(1768535976.808:248): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=1860 comm="fusermount3" capability=7  capname="setuid"
+[    8.653584] audit: type=1400 audit(1768535976.809:249): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=1861 comm="fusermount3" capability=7  capname="setuid"
+[    8.892999] audit: type=1400 audit(1768535977.048:250): apparmor="DENIED" operation="open" class="file" profile="snap-update-ns.prompting-client" name="/run/gdm3/home/gdm-greeter/" pid=1902 comm="snap-update-ns" requested_mask="r" denied_mask="r" fsuid=60578 ouid=60578
+[   10.897091] rfkill: input handler disabled
+[   11.009477] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   11.009505] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   11.009511] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   11.009516] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   11.485606] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   11.485623] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   11.485626] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   11.485629] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   11.771778] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   11.771790] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   11.771792] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   11.771796] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   12.043549] wlo1: authenticate with a8:6e:84:0b:a9:f2 (local address=5c:ba:ef:7f:a0:b3)
+[   12.085525] wlo1: send auth to a8:6e:84:0b:a9:f2 (try 1/3)
+[   12.086188] wlo1: authenticated
+[   12.086490] wlo1: associate with a8:6e:84:0b:a9:f2 (try 1/3)
+[   12.088565] wlo1: RX AssocResp from a8:6e:84:0b:a9:f2 (capab=0x811 status=0 aid=1)
+[   12.089321] wlo1: associated
+[   12.650184] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   12.650201] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   12.650203] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   12.650206] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   16.160462] kauditd_printk_skb: 3 callbacks suppressed
+[   16.160467] audit: type=1400 audit(1768535984.316:254): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=2458 comm="fusermount3" capability=1  capname="dac_override"
+[   16.160475] audit: type=1400 audit(1768535984.316:255): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=2458 comm="fusermount3" capability=7  capname="setuid"
+[   16.161173] audit: type=1400 audit(1768535984.316:256): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=2459 comm="fusermount3" capability=7  capname="setuid"
+[   16.313527] rfkill: input handler enabled
+[   16.543828] audit: type=1400 audit(1768535984.699:257): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=2582 comm="fusermount3" capability=1  capname="dac_override"
+[   16.543865] audit: type=1400 audit(1768535984.699:258): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=2582 comm="fusermount3" capability=7  capname="setuid"
+[   16.544792] audit: type=1400 audit(1768535984.700:259): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=2583 comm="fusermount3" capability=7  capname="setuid"
+[   18.244487] usb 2-1: new SuperSpeed USB device number 2 using xhci_hcd
+[   18.256159] usb 2-1: New USB device found, idVendor=0781, idProduct=55b1, bcdDevice= 1.10
+[   18.256167] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   18.256171] usb 2-1: Product: SanDisk 3.2 Gen1
+[   18.256173] usb 2-1: Manufacturer: SanDisk
+[   18.256175] usb 2-1: SerialNumber: A2003CA2E5C3F826
+[   18.276973] usb-storage 2-1:1.0: USB Mass Storage device detected
+[   18.277287] scsi host1: usb-storage 2-1:1.0
+[   18.277504] usbcore: registered new interface driver usb-storage
+[   18.283486] usbcore: registered new interface driver uas
+[   18.718842] rfkill: input handler disabled
+[   19.325033] scsi 1:0:0:0: Direct-Access     SanDisk  SanDisk 3.2 Gen1 DL17 PQ: 0 ANSI: 6
+[   19.325475] sd 1:0:0:0: Attached scsi generic sg0 type 0
+[   19.402984] sd 1:0:0:0: [sda] 244457472 512-byte logical blocks: (125 GB/117 GiB)
+[   19.403179] sd 1:0:0:0: [sda] Write Protect is off
+[   19.403187] sd 1:0:0:0: [sda] Mode Sense: 45 00 00 00
+[   19.403370] sd 1:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[   19.418454]  sda: sda1
+[   19.418618] sd 1:0:0:0: [sda] Attached SCSI removable disk
+[   19.987753] exFAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   20.850986] audit: type=1400 audit(1768535989.006:260): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=3335 comm="fusermount3" capability=1  capname="dac_override"
+[   20.850999] audit: type=1400 audit(1768535989.006:261): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=3335 comm="fusermount3" capability=7  capname="setuid"
+[   20.861461] audit: type=1400 audit(1768535989.017:262): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=3339 comm="fusermount3" capability=7  capname="setuid"
+[   20.875629] audit: type=1400 audit(1768535989.028:263): apparmor="DENIED" operation="mount" class="mount" info="failed mntpnt match" error=-13 profile="fusermount3" name="/" pid=3345 comm="fusermount3" flags="rw, rprivate"
+[   26.467228] audit: type=1400 audit(1768535994.623:264): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[   26.467236] audit: type=1400 audit(1768535994.623:265): apparmor="DENIED" operation="mknod" class="file" profile="/usr/bin/wsdd" name="/var/lib/libuuid/clock.txt" pid=3540 comm="python3" requested_mask="c" denied_mask="c" fsuid=1000 ouid=1000
+[   28.472086] audit: type=1400 audit(1768535996.628:266): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[   34.393717] warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+[   36.254309] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   36.254358] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   36.254365] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   36.254373] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   46.810194] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   46.810224] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   46.810232] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   46.810241] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   48.170794] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   48.170811] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   48.170815] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   48.170820] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[   48.270466] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[   48.270496] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[   48.270504] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[   48.270513] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  104.608194] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  104.608228] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  104.608240] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  104.608253] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  106.736436] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  106.736470] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  106.736475] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  106.736482] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  115.995530] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  115.995567] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  115.995578] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  115.995590] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  131.152730] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  131.152764] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  131.152772] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  131.152785] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  137.821453] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  137.821480] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  137.821488] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  137.821497] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  138.328438] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  138.328467] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  138.328475] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  138.328484] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  138.841860] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  138.841891] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  138.841939] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  138.841953] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  139.332501] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  139.332522] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  139.332530] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  139.332538] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  139.471961] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  139.471986] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  139.471992] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  139.471999] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  139.647524] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  139.647541] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  139.647544] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  139.647548] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  142.239492] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  142.239509] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  142.239512] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  142.239516] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  142.817767] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  142.817784] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  142.817788] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  142.817792] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  143.006579] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  143.006597] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  143.006600] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  143.006604] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  143.499885] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  143.499902] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  143.499906] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  143.499909] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  155.143234] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  155.143271] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  155.143287] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  155.143296] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  159.177122] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  159.177154] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  159.177159] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  159.177163] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  159.400715] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  159.400754] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  159.400762] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  159.400769] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  159.450043] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  159.450065] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  159.450071] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  159.450078] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  159.718097] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  159.718120] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  159.718125] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  159.718130] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  160.281657] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  160.281683] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  160.281690] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  160.281698] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  164.692894] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  164.692922] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  164.692930] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  164.692939] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  165.799657] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  165.799703] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  165.799711] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  165.799720] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  174.012285] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  174.012303] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  174.012306] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  174.012310] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  175.301053] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  175.301112] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  175.301120] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  175.301130] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  175.577792] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  175.577829] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  175.577841] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  175.577854] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  196.383895] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  196.383934] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  196.383944] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  196.383954] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  239.343589] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  239.343618] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  239.343627] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  239.343636] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  252.084920] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  252.084960] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  252.084970] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  252.084984] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  267.034544] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  267.034611] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  267.034621] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  267.034632] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  286.489973] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  286.490014] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  286.490024] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  286.490034] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  311.993415] audit: type=1400 audit(1768536280.533:267): apparmor="AUDIT" operation="userns_create" class="namespace" info="Userns create - transitioning profile" profile="unconfined" pid=4761 comm="(insights)" requested="userns_create" target="unprivileged_userns" execpath="/usr/lib/systemd/systemd-executor"
+[  311.995269] audit: type=1400 audit(1768536280.535:268): apparmor="DENIED" operation="capable" class="cap" profile="unprivileged_userns" pid=4761 comm="(insights)" capability=21  capname="sys_admin"
+[  312.078094] audit: type=1400 audit(1768536280.618:269): apparmor="DENIED" operation="getattr" class="file" info="Failed name lookup - disconnected path" error=-13 profile="unprivileged_userns" name="" pid=4770 comm="systemd-detect-" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[  312.078113] audit: type=1400 audit(1768536280.618:270): apparmor="DENIED" operation="getattr" class="file" info="Failed name lookup - disconnected path" error=-13 profile="unprivileged_userns" name="" pid=4770 comm="systemd-detect-" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[  321.408854] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  321.408887] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  321.408896] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  321.408906] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  451.249901] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  451.249931] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  451.249939] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  451.249949] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  509.417966] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  509.417992] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  509.417999] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  509.418007] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  526.020634] audit: type=1400 audit(1768536494.580:271): apparmor="AUDIT" operation="userns_create" class="namespace" info="Userns create - transitioning profile" profile="unconfined" pid=4953 comm="(insights)" requested="userns_create" target="unprivileged_userns" execpath="/usr/lib/systemd/systemd-executor"
+[  526.022103] audit: type=1400 audit(1768536494.582:272): apparmor="DENIED" operation="capable" class="cap" profile="unprivileged_userns" pid=4953 comm="(insights)" capability=21  capname="sys_admin"
+[  531.355049] usb 2-1: USB disconnect, device number 2
+[  585.702280] audit: type=1400 audit(1768536554.245:273): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[  596.350062] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  596.350129] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  596.350141] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  596.350152] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  624.000286] audit: type=1400 audit(1768536592.543:274): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[  630.245597] audit: type=1400 audit(1768536598.788:275): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[  637.755305] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  637.755335] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  637.755342] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  637.755352] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  684.856887] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  684.856917] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  684.856925] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  684.856934] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  789.678225] workqueue: delayed_fput hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+[  804.014074] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  804.014091] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  804.014096] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  804.014101] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  830.563408] audit: type=1400 audit(1768536799.108:276): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[  830.564449] audit: type=1400 audit(1768536799.109:277): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[  839.956040] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  839.956058] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  839.956063] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  839.956069] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  858.638776] workqueue: delayed_fput hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+[  884.397274] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  884.397301] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  884.397308] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  884.397316] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  898.449951] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  898.449977] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  898.449984] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  898.449993] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  898.603513] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  898.603540] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  898.603547] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  898.603555] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  898.692038] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  898.692064] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  898.692070] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  898.692078] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  932.285701] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  932.285742] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  932.285752] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  932.285764] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[  955.872096] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[  955.872130] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[  955.872139] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[  955.872149] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1043.115764] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1043.115858] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1043.115873] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1043.115889] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1063.759829] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1063.759850] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1063.759855] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1063.759861] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1066.431509] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1066.431536] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1066.431541] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1066.431548] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1076.121570] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1076.121597] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1076.121604] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1076.121614] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1076.198451] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1076.198485] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1076.198498] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1076.198512] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1076.198842] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1076.198868] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1076.198878] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1076.198889] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1076.218780] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1076.218805] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1076.218813] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1076.218822] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1076.735747] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1076.735791] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1076.735804] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1076.735817] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1077.569287] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1077.569317] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1077.569325] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1077.569334] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1077.697937] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1077.697974] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1077.697985] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1077.697999] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1077.908888] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1077.908913] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1077.908921] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1077.908930] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1077.952387] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1077.952440] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1077.952448] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1077.952458] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1078.830543] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1078.830571] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1078.830580] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1078.830589] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1083.153333] aer_ratelimit: 2 callbacks suppressed
+[ 1083.153343] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1083.153361] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1083.153365] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1083.153395] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1095.403528] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1095.403558] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1095.403566] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1095.403575] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1104.042897] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1104.042925] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1104.042933] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1104.042943] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1140.309310] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1140.309335] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1140.309342] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1140.309350] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1141.174666] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1141.174689] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1141.174696] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1141.174704] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1142.555161] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1142.555179] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1142.555183] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1142.555187] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1143.678373] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1143.678397] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1143.678404] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1143.678412] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1144.591326] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1144.591347] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1144.591352] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1144.591358] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1144.910999] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1144.911015] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1144.911019] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1144.911023] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1146.935964] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1146.935990] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1146.935996] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1146.936005] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1152.229013] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1152.229038] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1152.229045] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1152.229053] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1154.104502] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1154.104539] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1154.104547] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1154.104556] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1171.231146] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1171.231175] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1171.231183] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1171.231192] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1173.725749] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1173.725786] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1173.725799] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1173.725813] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1237.366198] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1237.366235] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1237.366247] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1237.366261] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1252.319666] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1252.319695] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1252.319703] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1252.319713] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1294.873359] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1294.873386] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1294.873396] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1294.873406] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1302.143965] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1302.143994] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1302.144002] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1302.144011] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1302.505374] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1302.505407] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1302.505415] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1302.505424] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1302.934095] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1302.934125] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1302.934133] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1302.934142] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1315.721636] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1315.721669] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1315.721679] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1315.721690] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1345.482007] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1345.482035] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1345.482043] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1345.482052] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1345.581790] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1345.581820] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1345.581828] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1345.581837] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1399.795026] lkm1: loading out-of-tree module taints kernel.
+[ 1399.795042] lkm1: module verification failed: signature and/or required key missing - tainting kernel
+[ 1399.795976] Printing all processes.
+[ 1399.796004] PID: 455 | Name: systemd-journal
+[ 1399.796055] PID: 6721 | Name: insmod
+[ 1399.796059] All processes printed.
+[ 1438.553234] audit: type=1400 audit(1768537407.109:278): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[ 1438.554039] audit: type=1400 audit(1768537407.110:279): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[ 1439.036432] Unloading Module.
+[ 1492.749471] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1492.749503] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1492.749511] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1492.749520] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1514.663116] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1514.663148] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1514.663156] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1514.663165] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1528.495331] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1528.495362] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1528.495370] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1528.495379] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1536.678959] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1536.679003] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1536.679015] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1536.679025] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1565.428380] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1565.428410] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1565.428418] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1565.428427] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1581.661901] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1581.661941] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1581.661951] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1581.661962] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1590.667285] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1590.667315] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1590.667322] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1590.667331] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1627.326237] Printing all processes.
+[ 1627.326310] PID: 4127 | Name: ptyxis
+[ 1627.326331] PID: 7239 | Name: insmod
+[ 1627.326335] All processes printed.
+[ 1709.747494] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1709.747531] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1709.747539] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1709.747548] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1734.734158] Unloading Module.
+[ 1739.481811] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1739.481842] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1739.481850] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1739.481859] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1739.562220] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1739.562279] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1739.562316] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1739.562332] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1739.692854] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1739.692883] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1739.692892] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1739.692901] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1739.804943] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1739.804973] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1739.804982] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1739.804991] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1739.968846] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1739.968877] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1739.968885] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1739.968894] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1740.626137] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1740.626167] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1740.626175] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1740.626183] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1741.010678] pcieport 0000:00:1d.1: AER: Multiple Correctable error message received from 0000:02:00.0
+[ 1741.010708] rtw88_8821ce 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+[ 1741.010716] rtw88_8821ce 0000:02:00.0:   device [10ec:c821] error status/mask=00000001/0000e000
+[ 1741.010725] rtw88_8821ce 0000:02:00.0:    [ 0] RxErr                  (First)
+[ 1745.556140] audit: type=1400 audit(1768537714.109:280): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
+[ 1745.556841] audit: type=1400 audit(1768537714.110:281): apparmor="DENIED" operation="connect" class="file" profile="/usr/bin/wsdd" name="/run/uuidd/request" pid=3540 comm="python3" requested_mask="w" denied_mask="w" fsuid=1000 ouid=0
