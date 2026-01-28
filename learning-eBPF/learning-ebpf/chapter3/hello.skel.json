@@ -1,0 +1,1 @@
+{"bpf_skel":{"data_sections":[{"name":".bss","variables":[{"name":"counter","type":"int"}]}],"maps":[{"ident":"bss","mmaped":true,"name":"hello_bp.bss"},{"ident":"rodata","name":"hello_bp.rodata"}],"obj_name":"hello_bpf","progs":[{"attach":"xdp","link":true,"name":"hello"}]},"eunomia_version":"0.3.4"}

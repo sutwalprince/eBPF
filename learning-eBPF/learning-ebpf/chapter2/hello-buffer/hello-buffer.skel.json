@@ -1,0 +1,24 @@
+{
+    "bpf_skel": {
+        "data_sections": [],
+        "maps": [
+            {
+                "ident": "rodata_str1_1",
+                "name": ".rodata.str1.1"
+            },
+            {
+                "ident": "rodata",
+                "name": "hello_bu.rodata"
+            }
+        ],
+        "obj_name": "hello_buffer_bpf",
+        "progs": [
+            {
+                "attach": "kprobe/__x64_sys_execve",
+                "link": true,
+                "name": "kprobe_execve_non_core"
+            }
+        ]
+    },
+    "eunomia_version": "0.3.4"
+}
