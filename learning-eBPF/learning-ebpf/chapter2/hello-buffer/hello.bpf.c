@@ -11,9 +11,6 @@ struct {
     __uint(max_entries, 2);
 } my_map SEC(".maps");
 
-
-
-// Use the generic syscall__ prefix for portability
 SEC("kprobe/__x64_sys_execve")
 int kprobe_execve_non_core(void *ctx)
 {
@@ -27,8 +24,6 @@ int kprobe_execve_non_core(void *ctx)
     bpf_probe_read_kernel(&data.message, sizeof(data.message), message);
 
     bpf_perf_event_output(ctx, &my_map, BPF_F_CURRENT_CPU, &data, sizeof(data));
-    bpf_printk(" PID: %d, UID: %d, COMM: %s, MESSAGE: %s\n",
-           data.pid, data.uid, data.command, data.message);
 
     return 0;
 }
